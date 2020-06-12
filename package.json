@@ -2,7 +2,7 @@
   "name": "rob-game",
   "version": "1.0.0",
   "description": "",
-  "main": "src/server/index.js",
+  "main": "server.js",
   "scripts": {
     "dev": "next",
     "build": "next build",
