@@ -16,7 +16,7 @@ class App extends Component {
         return (
             <Fragment>
                 <Head>
-                    <title>My page title</title>
+                    <title>My page titles</title>
                     <script async src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js" />
                     <script async src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js" />
                     <script async  src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/debug.addIndicators.min.js" />
