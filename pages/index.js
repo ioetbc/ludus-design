@@ -1,16 +1,37 @@
 import React, { Component, Fragment } from 'react';
 import Head from 'next/head';
-import { motion } from 'framer-motion';
+import { includes } from 'lodash';
 
 import style from '../styles/scroll.module.scss';
 import Probjects from '../components/probjects';
 import About from '../components/About';
 import Contact from '../components/Contact';
+import Intro from '../components/Intro';
 
 class App extends Component {
     constructor(props) {
         super(props)
     }
+
+    componentDidMount() {
+        const sections = document.querySelectorAll('.component');
+        const options = { threshold: .6 };
+		const observer = new IntersectionObserver((entries, observer) => {
+			entries.forEach(element => {
+                const body = document.getElementsByTagName('body')[0];
+				if (element.isIntersecting && includes(element.target.className, 'aboutWrapper')) {
+                    //     console.log('element', element)
+                    //     body.classList = 'bg-black'
+                    // } else {
+                    //     body.classList = 'bg-white'
+
+                    }
+				});
+		}, options);
+
+		sections.forEach(section => observer.observe(section));
+    }
+
 
     render() {
         return (
@@ -22,74 +43,29 @@ class App extends Component {
                     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/plugins/debug.addIndicators.min.js" />
                     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js" />
                     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js" />
-                    <link rel="stylesheet" href="https://use.typekit.net/nvy3bvq.css"></link>
-                    <link
-                        rel="preload"
-                        href="/fonts/acumin-pro.woff2"
-                        as="font"
-                        crossOrigin=""
-                    />
                     <script src="//f.vimeocdn.com/js/froogaloop2.min.js"></script>
                 </Head>
 
-                        <div id="example-wrapper" className={style.horizontal}>
-                            <div class={style.scrollContent}>
-                           
-                            <div class="hello">
+                <div id="example-wrapper" className={style.horizontal}>
+                    <div class={style.scrollContent}>
+                    
+                        <div class="hello">
                             <div class="vimeo-wrapper">
-                            <iframe id="vimeo_player" src="//player.vimeo.com/video/108960330?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=1&amp;loop=1&amp;background=1" width="100%" height="100%" class="video hide-on-mobile" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
-                            </div>
-                              </div>
-
-                                <Probjects />
-
-                                <About />
-
-                                <Contact />
-
+                                <iframe id="vimeo_player" src="//player.vimeo.com/video/108960330?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=1&amp;loop=1&amp;background=1" width="100%" height="100%" class="video hide-on-mobile" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
                             </div>
                         </div>
 
+                        <Intro />
 
+                        <Probjects />
 
+                        <About />
 
+                        <Contact />
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                {/*<motion.div
-                    class="test"
-                    initial={{ y: "100%" }}
-                    exit={{ y: "-100%" }}
-                    transition={{
-                        duration: 0.4
-                    }}
-                />
-                <motion.div
-                    class="test white"
-                    initial={{ y: "100%" }}
-                    exit={{ y: "-200%" }}
-                    transition={{
-                        delay: 0.4,
-                        duration: 0.8
-                    }}
-                />*/}
-                    </Fragment>
-
+                    </div>
+                </div>
+            </Fragment>
         )
     }
 }

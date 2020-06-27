@@ -1,8 +1,27 @@
 /*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */html,body,p,ol,ul,li,dl,dt,dd,blockquote,figure,fieldset,legend,textarea,pre,iframe,hr,h1,h2,h3,h4,h5,h6{margin:0;padding:0}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}ul{list-style:none}button,input,select,textarea{margin:0}html{box-sizing:border-box}*,*::before,*::after{box-sizing:inherit}img,video{height:auto;max-width:100%}iframe{border:0}table{border-collapse:collapse;border-spacing:0}td,th{padding:0}td:not([align]),th:not([align]){text-align:left}
 
+@font-face {
+	font-family: 'acumin';
+	src: url('../public/fonts/acumin.woff2') format('woff2'), /* Super Modern Browsers */
+}
+
 html, body {
 	height: 100%;
-	font-family: acumin-pro, sans-serif;
+	font-family: 'acumin', sans-serif;
+	font-style: normal;
+	font-display: auto;
+	font-style: normal;
+	font-weight: 400;
+}
+
+body {
+	transition: background .3s ease-in-out;
+	&.bg-black {
+		background: black;
+	}
+	&.bg-white {
+		background: white;
+	}
 }
 
 ::-webkit-scrollbar {
@@ -57,22 +76,46 @@ html, body {
 	}
 }
 
-// fonts
+// FONTSFONTSFONTSFONTSFONTSFONTSFONTSFONTSFONTSFONTSFONTSFONTSFONTSFONTSFONTSFONTSFONTSFONTSFONTSFONTSFONTSFONTSFONTSFONTSFONTSFONTS
+
+h1 {
+	font-size: 42px;
+}
 
 h2 {
 	font-size: 24px;
-	font-weight: 200;
-	margin-bottom: 24px;
+	margin-bottom: 8px;
 
 	@media screen and (min-width: '1000px') {
-		font-size: 32px;
+		font-size: 30px;
 	}
 }
 
-h1 {
-	font-weight: 200;
+h6 {
+	font-size: 11px;
 }
 
 p {
 	font-weight: 200;
+	font-size: 16px;
+	@media screen and (min-width: '1000px') {
+		font-size: 14px;
+	}
+}
+
+
+
+// UTILSUTILSUTILSUTILSUTILSUTILSUTILSUTILSUTILSUTILSUTILSUTILSUTILSUTILSUTILSUTILSUTILSUTILSUTILSUTILSUTILSUTILSUTILSUTILSUTILSUTIL
+
+.mobile {
+	@media screen and (min-width: '1000px') {
+		display: none;
+	}
+}
+
+.desktop {
+	display: none;
+	@media screen and (min-width: '1000px') {
+		display: block;
+	}
 }

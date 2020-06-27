@@ -1,13 +1,13 @@
 .aboutWrapper {
     display: inline-block;
     position: relative;
-    vertical-align: middle;
     width: 100vw;
     height: 100%;
     background: black;
 
     @media screen and (min-width: '1000px') {
         height: 100%;
+        top: -2px;
         width: max-content;
     }
 
@@ -25,7 +25,7 @@
             align-items: flex-end;
             width: 100%;
             max-width: none;
-            margin: 0 0 0 320px;
+            margin: 0 0 0 15vw;
         }
 
         p, li {
@@ -43,11 +43,9 @@
             line-height: 24px;;
         }
 
-        .headingSmall {
-            font-size: 11px;
-            margin-bottom: 16px;
+        h6 {
+	        margin-bottom: 16px;
         }
-
 
         .intro {
             padding-bottom: 120px;
@@ -57,6 +55,11 @@
                 width: 290px;
                 height: 460px;
                 padding-bottom: 0;
+                .col2 {
+                    margin-top: 120px;
+                    display: grid;
+                    grid-template-columns: 1fr 2fr;
+                }
             }
         }
 
@@ -118,7 +121,7 @@
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 grid-gap: 80px;
-                margin-right: 250px;
+                margin-right: 15vw;
                 height: 460px;
                 white-space: normal;
 
