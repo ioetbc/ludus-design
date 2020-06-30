@@ -48,12 +48,6 @@ class App extends Component {
 
                 <div id="example-wrapper" className={style.horizontal}>
                     <div class={style.scrollContent}>
-                    
-                        <div class="hello">
-                            <div class="vimeo-wrapper">
-                                <iframe id="vimeo_player" src="//player.vimeo.com/video/108960330?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=1&amp;loop=1&amp;background=1" width="100%" height="100%" class="video hide-on-mobile" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
-                            </div>
-                        </div>
 
                         <Intro />
 

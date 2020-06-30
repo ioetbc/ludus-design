@@ -86,61 +86,70 @@ class  Probjects extends Component {
     render() {
         return (
             <Fragment>
-                <div className={style.probjectIntro}>
-                    <div className={style.probjectContent}>
-                        <h2>Selected Work</h2>
-                        <p className={style.pre}>Here are a few projects that I have done on a freelance basis, where I have neem the sole creative on the project. Want to see more of my work.</p>
-                        <a className={style.link} href="">Get in touch</a>
+
+                <div className="column marginRightLarge">
+                    <div className="columnContent medium">
+                        <div className="content">
+                            <div className={style.thumbnailWrapper}>
+                                <div className={style.imageWrapper}>
+                                    <h2>Selected Work</h2>
+                                    <p>Here are a few projects that I have done on a freelance basis, where I have neem the sole creative on the project. Want to see more of my work.</p>
+                                    <a href="">Get in touch</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
+
+
                 <Link href="/case-study">
-                    <div id="target" className={style.thumbnailWrapper}>
-
-                            <img id="hello" className={style.thumbnail} src="/images/palceholder-probject-image.jpeg" />
-
-                        <div className={style.thumbnailContent}>
-                            <p className={style.thumbnailNumber}>01.</p>
-                            <p className={style.thumbnailTitle}>WorkLock</p>
+                    <div id="target" className="column marginRightSmall">
+                        <div className="columnContent medium">
+                            <img className={style.thumbnail} src="/images/palceholder-probject-image-2.jpeg" />
+                            <div className={style.thumbnailContent}>
+                                <p className={style.thumbnailNumber}>02.</p>
+                                <p className={style.thumbnailTitle}>the Winchester Orangery</p>
+                            </div>
                         </div>
                     </div>
                 </Link>
 
                 <Link href="/case-study">
-                    <div id="target2" className={style.thumbnailWrapper}>
-                        <div className={style.imageWrapper}>
-                            <img id="hello2" className={style.thumbnail} src="/images/palceholder-probject-image-2.jpeg" />
-                        </div>
-                        <div className={style.thumbnailContent}>
-                            <p className={style.thumbnailNumber}>02.</p>
-                            <p className={style.thumbnailTitle}>the Winchester Orangery</p>
-                        </div>
-                    </div>
-                </Link>
-
-                <Link href="/case-study">
-                    <div id="target3" className={style.thumbnailWrapper}>
-                        <div className={style.imageWrapper}>
-                            <img id="hello3" className={style.thumbnail} src="/images/palceholder-probject-image-3.jpeg" />
-                        </div>
-                        <div className={style.thumbnailContent}>
-                            <p className={style.thumbnailNumber}>03.</p>
-                            <p className={style.thumbnailTitle}>WorkLock</p>
+                    <div id="target2" className="column marginRightSmall">
+                        <div className="columnContent medium">
+                            <img className={style.thumbnail} src="/images/palceholder-probject-image-2.jpeg" />
+                            <div className={style.thumbnailContent}>
+                                <p className={style.thumbnailNumber}>02.</p>
+                                <p className={style.thumbnailTitle}>the Winchester Orangery</p>
+                            </div>
                         </div>
                     </div>
                 </Link>
 
                 <Link href="/case-study">
-                    <div id="target4" className={style.thumbnailWrapper}>
-                        <div className={style.imageWrapper}>
-                            <img id="hello4" className={style.thumbnail} src="/images/palceholder-probject-image.jpeg" />
-                        </div>
-                        <div className={style.thumbnailContent}>
-                            <p className={style.thumbnailNumber}>04.</p>
-                            <p className={style.thumbnailTitle}>the Winchester Orangery</p>
+                    <div id="target3" className="column marginRightLarge">
+                        <div className="columnContent medium">
+                            <img className={style.thumbnail} src="/images/palceholder-probject-image-2.jpeg" />
+                            <div className={style.thumbnailContent}>
+                                <p className={style.thumbnailNumber}>02.</p>
+                                <p className={style.thumbnailTitle}>the Winchester Orangery</p>
+                            </div>
                         </div>
                     </div>
-        </Link>
+                </Link>
+
+
+
+
+
+
+
+
+
+
+
+
 
             </Fragment>
         )

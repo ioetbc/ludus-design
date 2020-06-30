@@ -1,10 +1,10 @@
 import style from '../styles/intro.module.scss';
 
-const About = () => {
+const Intro = () => {
     return (
-        <div className={`${style.introWrapper} component`}>
-            <div className={style.introContent}>
-                <div className={style.fuck}>
+        <div className="column">
+            <div className="columnContent large">
+                <div className="content">
                     <div className={style.intro}>
                         <h2>I'm Rob Game.</h2>
                         <div className={style.col2}>
@@ -12,11 +12,11 @@ const About = () => {
                             <p className="desktop">I like to take design in a different direction.</p>
                         </div>
                     </div>
+                    <img className={style.downArrow} src="/images/close-icon.svg" />
                 </div>
             </div>
-            <img className={style.downArrow} src="/images/close-icon.svg" />
         </div>
     )
 }
 
-export default About;
+export default Intro;
