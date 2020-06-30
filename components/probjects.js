@@ -85,7 +85,7 @@ class  Probjects extends Component {
 
     render() {
         return (
-            <Fragment>
+            <div className={style.probjectWrapper}>
                 <div className={style.probjectIntro}>
                     <div className={style.probjectContent}>
                         <h2>Selected Work</h2>
@@ -140,9 +140,9 @@ class  Probjects extends Component {
                             <p className={style.thumbnailTitle}>the Winchester Orangery</p>
                         </div>
                     </div>
-        </Link>
+                </Link>
 
-            </Fragment>
+            </div>
         )
     }
 }

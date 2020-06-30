@@ -61,8 +61,13 @@
             }
         }
     }
-}    
+}   
 
+.probjectWrapper {
+    margin-right: 15vw;
+    display: inline-block;
+    vertical-align: top;
+}
 
 .introWrapper {
     @media screen and (min-width: '1000px') {
