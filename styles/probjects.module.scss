@@ -2,6 +2,8 @@
     width: 25vw;
     height: 100vh;
     display: inline-block;
+    vertical-align: top;
+    background: green;
 
     &:after {
         content: '';
@@ -135,12 +137,13 @@
     position: relative;
     border: 0px solid white;
     text-align: center;
-    vertical-align: middle;
     width: 350px;
     max-width: 600px;
     transition: width .2s;
     top: 50%;
     margin: 0 0 24px 0;
+    vertical-align: top;
+    background: red;
 
     @media screen and (min-width: '1000px') {
         height: 100vh;
@@ -149,9 +152,10 @@
     }
 
     .imageWrapper {
-        height: calc(100% - 115px);
+        height: 100vh;
         display: flex;
-        align-items: flex-end;
+        justify-content: center;
+        flex-direction: column;
 
         .thumbnail {
             width: 100%;

@@ -96,9 +96,9 @@ class  Probjects extends Component {
 
                 <Link href="/case-study">
                     <div id="target" className={style.thumbnailWrapper}>
-
+                        <div className={style.imageWrapper}>
                             <img id="hello" className={style.thumbnail} src="/images/palceholder-probject-image.jpeg" />
-
+                        </div>
                         <div className={style.thumbnailContent}>
                             <p className={style.thumbnailNumber}>01.</p>
                             <p className={style.thumbnailTitle}>WorkLock</p>
