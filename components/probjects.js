@@ -94,50 +94,50 @@ class  Probjects extends Component {
                     </div>
                 </div>
 
-                <Link href="/case-study">
+                <Link href="/worklock">
                     <div id="target" className={style.thumbnailWrapper}>
                         <div className={style.imageWrapper}>
                             <img id="hello" className={style.thumbnail} src="/images/palceholder-probject-image.jpeg" />
-                        </div>
-                        <div className={style.thumbnailContent}>
-                            <p className={style.thumbnailNumber}>01.</p>
-                            <p className={style.thumbnailTitle}>WorkLock</p>
+                            <div className={style.thumbnailContent}>
+                                <p className={style.thumbnailNumber}>01.</p>
+                                <p className={style.thumbnailTitle}>WorkLock</p>
+                            </div>
                         </div>
                     </div>
                 </Link>
 
-                <Link href="/case-study">
+                <Link href="/worklock">
                     <div id="target2" className={style.thumbnailWrapper}>
                         <div className={style.imageWrapper}>
                             <img id="hello2" className={style.thumbnail} src="/images/palceholder-probject-image-2.jpeg" />
-                        </div>
-                        <div className={style.thumbnailContent}>
-                            <p className={style.thumbnailNumber}>02.</p>
-                            <p className={style.thumbnailTitle}>the Winchester Orangery</p>
+                            <div className={style.thumbnailContent}>
+                                <p className={style.thumbnailNumber}>02.</p>
+                                <p className={style.thumbnailTitle}>the Winchester Orangery</p>
+                            </div>
                         </div>
                     </div>
                 </Link>
 
-                <Link href="/case-study">
+                <Link href="/worklock">
                     <div id="target3" className={style.thumbnailWrapper}>
                         <div className={style.imageWrapper}>
                             <img id="hello3" className={style.thumbnail} src="/images/palceholder-probject-image-3.jpeg" />
-                        </div>
-                        <div className={style.thumbnailContent}>
-                            <p className={style.thumbnailNumber}>03.</p>
-                            <p className={style.thumbnailTitle}>WorkLock</p>
+                            <div className={style.thumbnailContent}>
+                                <p className={style.thumbnailNumber}>03.</p>
+                                <p className={style.thumbnailTitle}>WorkLock</p>
+                            </div>
                         </div>
                     </div>
                 </Link>
 
-                <Link href="/case-study">
+                <Link href="/worklock">
                     <div id="target4" className={style.thumbnailWrapper}>
                         <div className={style.imageWrapper}>
                             <img id="hello4" className={style.thumbnail} src="/images/palceholder-probject-image.jpeg" />
-                        </div>
-                        <div className={style.thumbnailContent}>
-                            <p className={style.thumbnailNumber}>04.</p>
-                            <p className={style.thumbnailTitle}>the Winchester Orangery</p>
+                            <div className={style.thumbnailContent}>
+                                <p className={style.thumbnailNumber}>04.</p>
+                                <p className={style.thumbnailTitle}>the Winchester Orangery</p>
+                            </div>
                         </div>
                     </div>
                 </Link>
