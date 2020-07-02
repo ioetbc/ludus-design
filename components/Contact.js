@@ -1,4 +1,4 @@
-import style from '../styles/about.module.scss';
+import style from '../styles/contact.module.scss';
 
 const Contact = () => {
     return (
@@ -7,10 +7,13 @@ const Contact = () => {
             <div className={style.fuck}>
                 <div className={style.intro}>
                         <h2 style={{color: 'black'}}>Get in touch</h2>
+                        <p className={style.email}>Rob@ludusdesign.co.uk</p>
                         <div className={style.col2}>
-                            <h6 style={{ color: 'black' }}>Stalk my instagrams</h6>
-                            <a style={{ color: 'black', display: 'inherit' }} href="">@ludus_design</a>
-                            <a style={{ color: 'black'}} href="">@robgameillustrations</a>
+                            <h6 style={{ color: 'black', width: '45px' }}>Stalk my instagrams</h6>
+                            <div className={style.col1}>
+                                <a className={style.link} href="">@ludus_design</a>
+                                <a className={style.link} href="">@robgameillustrations</a>
+                            </div>
                         </div>
                     </div>
                 </div>
