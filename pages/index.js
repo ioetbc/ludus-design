@@ -7,6 +7,7 @@ import Probjects from '../components/probjects';
 import About from '../components/About';
 import Contact from '../components/Contact';
 import Intro from '../components/Intro';
+import MobileHeader from '../components/MobileHeader'
 
 class App extends Component {
     constructor(props) {
@@ -48,6 +49,8 @@ class App extends Component {
 
                 <div id="example-wrapper" className={style.horizontal}>
                     <div class={style.scrollContent}>
+
+                        <MobileHeader />
                     
                         <div class="hello">
                             <div class="vimeo-wrapper">
