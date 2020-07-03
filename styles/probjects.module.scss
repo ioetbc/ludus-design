@@ -23,7 +23,7 @@
             max-width: 300px;
             white-space: normal;
             position: initial;
-            margin-top: calc(25vh - 37px);
+            margin-top: calc(15vh - 37px);
         }
     
         .pre {
@@ -150,7 +150,7 @@
         }
 
         @media screen and (min-width: '1000px') {
-            margin-top: 25vh;
+            margin-top: 15vh;
         }
     }
 
