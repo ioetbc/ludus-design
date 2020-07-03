@@ -61,6 +61,7 @@
                 width: 290px;
                 height: 460px;
                 padding-bottom: 0;
+                margin-top: 45vh;
                 .col2 {
                     margin-top: 120px;
                     display: grid;
@@ -117,7 +118,7 @@
             }
             @media screen and (min-width: '1000px') {
                 display: flex;
-                align-items: flex-end;
+                align-items: baseline;
                 height: 100vh;
 
                 &:after {
