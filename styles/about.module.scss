@@ -93,7 +93,6 @@
 
         .fuck {
             position: relative;
-            padding: 0 50px;
             &:after {
                 content: '';
                 position: absolute;
@@ -105,6 +104,7 @@
             }
             @media screen and (min-width: '1000px') {
                 margin-top: calc(46vh);
+                padding: 0 50px;
 
                 &:after {
                     left: auto;
