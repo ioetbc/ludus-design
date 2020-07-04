@@ -90,7 +90,7 @@ class  Probjects extends Component {
                     <div className={style.probjectContent}>
                         <h2>Selected Work</h2>
                         <p className={style.pre}>Here are a few projects that I have done on a freelance basis, where I have neem the sole creative on the project. Want to see more of my work.</p>
-                        <a className={style.link} href="">Get in touch</a>
+                        <a className={style.link} href="mailto:rob@ludusdesign.co.uk">Get in touch</a>
                     </div>
                 </div>
 
