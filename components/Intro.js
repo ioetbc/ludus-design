@@ -1,5 +1,12 @@
 import style from '../styles/intro.module.scss';
 
+function scrollTo() {
+    const yOffset = -90; 
+    const element = document.getElementById("introHeading");
+    const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+    window.scrollTo({top: y, behavior: 'smooth'});
+}
+
 const About = () => {
     return (
         <div className={`${style.introWrapper} component`}>
@@ -14,7 +21,7 @@ const About = () => {
                     </div>
                 </div>
             </div>
-            <img className={style.downArrow} src="/images/close-icon.svg" />
+            <img onClick={() => scrollTo()} className={style.downArrow} src="/images/down-arrow.svg" />
         </div>
     )
 }
