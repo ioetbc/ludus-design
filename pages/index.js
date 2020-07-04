@@ -7,7 +7,8 @@ import Probjects from '../components/probjects';
 import About from '../components/About';
 import Contact from '../components/Contact';
 import Intro from '../components/Intro';
-import MobileHeader from '../components/MobileHeader'
+import MobileHeader from '../components/MobileHeader';
+import DesktopSideBar from '../components/DesktopSideBar.js';
 
 class App extends Component {
     constructor(props) {
@@ -51,6 +52,8 @@ class App extends Component {
                     <div class={style.scrollContent}>
 
                         <MobileHeader />
+
+                        <DesktopSideBar />
                     
                         <div class="hello">
                             <div class="vimeo-wrapper">
