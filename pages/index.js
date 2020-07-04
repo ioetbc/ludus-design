@@ -16,7 +16,7 @@ class App extends Component {
     }
 
     componentDidMount() {
-        const sections = document.querySelectorAll('.component');
+        const sections = document.querySelectorAll('.background');
         const options = { threshold: .3 };
 		const observer = new IntersectionObserver((entries, observer) => {
 			entries.forEach(element => {
@@ -30,7 +30,19 @@ class App extends Component {
 				});
 		}, options);
 
-		sections.forEach(section => observer.observe(section));
+        sections.forEach(section => observer.observe(section));
+        
+        const fadeInSections = document.querySelectorAll('.component');
+        const fadeInOptions = { threshold: .4 };
+		const fadeInObserver = new IntersectionObserver((entries, observer) => {
+			entries.forEach(element => {
+				if (element.isIntersecting) {
+                        element.target.classList += ' fade-in'
+                    }
+				});
+		}, fadeInOptions);
+
+		fadeInSections.forEach(section => fadeInObserver.observe(section));
     }
 
 

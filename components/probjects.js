@@ -87,7 +87,7 @@ class  Probjects extends Component {
         return (
             <div className={style.probjectWrapper}>
                 <div className={style.probjectIntro}>
-                    <div className={style.probjectContent}>
+                    <div className={`${style.probjectContent} component`}>
                         <h2 id="introHeading">Selected Work</h2>
                         <p className={style.pre}>Here are a few projects that I have done on a freelance basis, where I have neem the sole creative on the project. Want to see more of my work.</p>
                         <a className={style.link} href="mailto:rob@ludusdesign.co.uk">Get in touch</a>
