@@ -2,7 +2,7 @@ import style from '../styles/contact.module.scss';
 
 const Contact = () => {
     return (
-        <div className={style.aboutWrapper} style={{background: 'white'}}>
+        <div className={style.aboutWrapper}>
             <div className={style.aboutContent}>
             <div className={style.fuck}>
                 <div className={style.intro}>

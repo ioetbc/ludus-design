@@ -17,15 +17,14 @@ class App extends Component {
 
     componentDidMount() {
         const sections = document.querySelectorAll('.component');
-        const options = { threshold: .6 };
+        const options = { threshold: .3 };
 		const observer = new IntersectionObserver((entries, observer) => {
 			entries.forEach(element => {
                 const body = document.getElementsByTagName('body')[0];
 				if (element.isIntersecting && includes(element.target.className, 'aboutWrapper')) {
-                    //     console.log('element', element)
-                    //     body.classList = 'bg-black'
-                    // } else {
-                    //     body.classList = 'bg-white'
+                        body.classList = 'bg-black'
+                    } else {
+                        body.classList = 'bg-white'
 
                     }
 				});
