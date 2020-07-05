@@ -2,9 +2,10 @@ import style from '../styles/about.module.scss';
 
 const About = () => {
     return (
-        <div className={`${style.aboutWrapper} background`}>
+        <div className={`${style.aboutWrapper} background fuck`}>
             <div className={style.aboutContent}>
-                <div className={`${style.fuck} component`}>
+
+                <div className={`${style.aboutIntroWrapper} component`}>
                     <div className={style.intro}>
                         <h2>About Me</h2>
                         <div className={style.col2}>
@@ -14,7 +15,7 @@ const About = () => {
                     </div>
                 </div>
 
-                <div className={`${style.fuck} component`}>
+                <div className={`${style.aboutIntroWrapper} component`}>
                     <div className={style.skillSet}>
                         <h6>Skill Set</h6>
                         <ul>

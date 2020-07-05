@@ -79,7 +79,7 @@
                 white-space: normal;
                 width: 290px;
                 height: 460px;
-                padding: 6px 0 0 0;
+                padding: 0;
             }
 
             ul {
@@ -97,28 +97,27 @@
             }
         }
 
-        .fuck {
+        .aboutIntroWrapper {
             position: relative;
-            &:after {
-                content: '';
-                position: absolute;
-                width: calc(100% + 24px);
-                height: 1px;
-                background: white;
-                left: -42px;
-                bottom: 20px;
-            }
+            // &:after {
+            //     content: '';
+            //     position: absolute;
+            //     width: calc(100% + 24px);
+            //     height: 1px;
+            //     background: white;
+            //     left: -42px;
+            //     bottom: 20px;
+            // }
             @media screen and (min-width: '1000px') {
                 margin-top: calc(46vh);
-                padding: 0 50px;
-
-                &:after {
-                    left: auto;
-                    bottom: 0;
-                    right: 0;
-                    height: 450px;
-                    width: 1px;
-                }
+                padding: 0 50px;  
+                // &:after {
+                //     left: auto;
+                //     bottom: 0;
+                //     right: 0;
+                //     height: 450px;
+                //     width: 1px;
+                // }
             }
         }
 
@@ -174,21 +173,21 @@
                         grid-gap: 40px;
 
 
-                        &:after {
-                            content: '';
-                            position: absolute;
-                            width: calc(100% + 24px);
-                            height: 1px;
-                            background: white;
-                            left: -42px;
-                            bottom: 20px;
+                        // &:after {
+                        //     content: '';
+                        //     position: absolute;
+                        //     width: calc(100% + 24px);
+                        //     height: 1px;
+                        //     background: white;
+                        //     left: -42px;
+                        //     bottom: 20px;
 
-                            left: auto;
-                            bottom: 0;
-                            right: 0;
-                            height: 450px;
-                            width: 1px;
-                        }
+                        //     left: auto;
+                        //     bottom: 0;
+                        //     right: 0;
+                        //     height: 450px;
+                        //     width: 1px;
+                        // }
                     }
 
                     div {

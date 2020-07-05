@@ -8,7 +8,8 @@ import About from '../components/About';
 import Contact from '../components/Contact';
 import Intro from '../components/Intro';
 import MobileHeader from '../components/MobileHeader';
-import DesktopSideBar from '../components/DesktopSideBar.js';
+import DesktopSideBar from '../components/DesktopSideBar';
+import Divider from '../components/Divider';
 
 class App extends Component {
     constructor(props) {
@@ -16,21 +17,24 @@ class App extends Component {
     }
 
     componentDidMount() {
-        const sections = document.querySelectorAll('.background');
-        const options = { threshold: .3 };
+        const section = document.querySelectorAll('.background')[0];
+        const options = { threshold: 1 };
 		const observer = new IntersectionObserver((entries, observer) => {
 			entries.forEach(element => {
                 const body = document.getElementsByTagName('body')[0];
-				if (element.isIntersecting && includes(element.target.className, 'aboutWrapper')) {
+                console.log('element.isIntersecting', element)
+				if (element.isIntersecting) {
+                        console.log('intersection the about wraooer')
                         body.classList = 'bg-black'
                     } else {
                         body.classList = 'bg-white'
 
                     }
 				});
-		}, options);
+        });
+        console.log('section', section)
 
-        sections.forEach(section => observer.observe(section));
+        observer.observe(section);
         
         const fadeInSections = document.querySelectorAll('.component');
         const fadeInOptions = { threshold: .4 };
@@ -74,7 +78,15 @@ class App extends Component {
 
                         <Intro />
 
+                        <Divider
+                            fullHeight={true}
+                        />
+
                         <Probjects />
+
+                        <Divider
+                            fullHeight={true}
+                        />
 
                         <About />
 

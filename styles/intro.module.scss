@@ -61,11 +61,10 @@
                 display: none;
             }
             &:after {
-                width: calc(100% + 24px);
                 left: auto;
                 bottom: 0;
                 right: 0;
-                top: 0;
+                top: -48.5vh;
                 height: 100vh;
                 width: 1px;
             }
