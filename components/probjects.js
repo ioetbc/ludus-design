@@ -85,64 +85,79 @@ class  Probjects extends Component {
 
     render() {
         return (
-            <div className={style.probjectWrapper}>
-                <div className={style.probjectIntro}>
-                    <div className={`${style.probjectContent} component`}>
+            <Fragment>
+                <div className="layoutWrapper">
+                    <div className="probjectContent component">
                         <h2 id="introHeading">Selected Work</h2>
-                        <p className={style.pre}>Here are a few projects that I have done on a freelance basis, where I have neem the sole creative on the project. Want to see more of my work.</p>
-                        <a className={style.link} href="mailto:rob@ludusdesign.co.uk">Get in touch</a>
+                        <p className="pre">Here are a few projects that I have done on a freelance basis, where I have neem the sole creative on the project. Want to see more of my work.</p>
+                        <a className="link" href="mailto:rob@ludusdesign.co.uk">Get in touch</a>
                     </div>
                 </div>
 
-                <Link href="/worklock">
-                    <div id="target" className={style.thumbnailWrapper}>
-                        <div className={style.imageWrapper}>
-                            <img id="hello" className={style.thumbnail} src="/images/palceholder-probject-image.jpeg" />
-                            <div className={style.thumbnailContent}>
-                                <p className={style.thumbnailNumber}>01.</p>
-                                <p className={style.thumbnailTitle}>WorkLock</p>
+            <div className={style.probjectWrapper}>
+            
+                <div className="layoutWrapper">
+                    <div className="probjectContent component" style={{ justifyContent: 'flex-end' }}>
+                        <Link href="/worklock">
+                            <div id="target" className={style.thumbnailWrapper}>
+                                <div className={style.imageWrapper}>
+                                    <img id="hello" className={style.thumbnail} src="/images/palceholder-probject-image.jpeg" />
+                                    <div className={style.thumbnailContent}>
+                                        <p className={style.thumbnailNumber}>01.</p>
+                                        <p className={style.thumbnailTitle}>WorkLock</p>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
+                        </Link>
                     </div>
-                </Link>
-
-                <Link href="/worklock">
-                    <div id="target2" className={style.thumbnailWrapper}>
-                        <div className={style.imageWrapper}>
-                            <img id="hello2" className={style.thumbnail} src="/images/palceholder-probject-image-2.jpeg" />
-                            <div className={style.thumbnailContent}>
-                                <p className={style.thumbnailNumber}>02.</p>
-                                <p className={style.thumbnailTitle}>the Winchester Orangery</p>
+                </div>
+                <div className="layoutWrapper">
+                    <div className="probjectContent component" style={{ justifyContent: 'flex-end' }}>
+                        <Link href="/worklock">
+                            <div id="target2" className={style.thumbnailWrapper}>
+                                <div className={style.imageWrapper}>
+                                    <img id="hello" className={style.thumbnail} src="/images/palceholder-probject-image-2.jpeg" />
+                                    <div className={style.thumbnailContent}>
+                                        <p className={style.thumbnailNumber}>02.</p>
+                                        <p className={style.thumbnailTitle}>the Winchester Orangery</p>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
+                        </Link>
                     </div>
-                </Link>
-
-                <Link href="/worklock">
-                    <div id="target3" className={style.thumbnailWrapper}>
-                        <div className={style.imageWrapper}>
-                            <img id="hello3" className={style.thumbnail} src="/images/palceholder-probject-image-3.jpeg" />
-                            <div className={style.thumbnailContent}>
-                                <p className={style.thumbnailNumber}>03.</p>
-                                <p className={style.thumbnailTitle}>WorkLock</p>
+                </div>
+                <div className="layoutWrapper">
+                    <div className="probjectContent component" style={{ justifyContent: 'flex-end' }}>
+                        <Link href="/worklock">
+                            <div id="target3" className={style.thumbnailWrapper}>
+                                <div className={style.imageWrapper}>
+                                    <img id="hello" className={style.thumbnail} src="/images/palceholder-probject-image-3.jpeg" />
+                                    <div className={style.thumbnailContent}>
+                                        <p className={style.thumbnailNumber}>03.</p>
+                                        <p className={style.thumbnailTitle}>WorkLock</p>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
+                        </Link>
                     </div>
-                </Link>
-
-                <Link href="/worklock">
-                    <div id="target4" className={style.thumbnailWrapper}>
-                        <div className={style.imageWrapper}>
-                            <img id="hello4" className={style.thumbnail} src="/images/palceholder-probject-image.jpeg" />
-                            <div className={style.thumbnailContent}>
-                                <p className={style.thumbnailNumber}>04.</p>
-                                <p className={style.thumbnailTitle}>the Winchester Orangery</p>
+                </div>
+                <div className="layoutWrapper">
+                    <div className="probjectContent component" style={{ justifyContent: 'flex-end' }}>
+                        <Link href="/worklock">
+                            <div id="target4" className={style.thumbnailWrapper}>
+                                <div className={style.imageWrapper}>
+                                    <img id="hello" className={style.thumbnail} src="/images/palceholder-probject-image-4.jpeg" />
+                                    <div className={style.thumbnailContent}>
+                                        <p className={style.thumbnailNumber}>04.</p>
+                                        <p className={style.thumbnailTitle}>the Winchester Orangery</p>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
+                        </Link>
                     </div>
-                </Link>
-
+                </div>
             </div>
+            </Fragment>
         )
     }
 }

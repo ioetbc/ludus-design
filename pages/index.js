@@ -18,7 +18,7 @@ class App extends Component {
 
     componentDidMount() {
         const section = document.querySelectorAll('.background')[0];
-        const options = { threshold: 1 };
+        const options = { threshold: .6 };
 		const observer = new IntersectionObserver((entries, observer) => {
 			entries.forEach(element => {
                 const body = document.getElementsByTagName('body')[0];
@@ -31,7 +31,7 @@ class App extends Component {
 
                     }
 				});
-        });
+        }, options);
         console.log('section', section)
 
         observer.observe(section);

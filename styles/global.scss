@@ -36,7 +36,7 @@ body {
 .hello {
 	display: inline-block;
 	height: 70vh;
-    vertical-align: middle;
+    // vertical-align: middle;
 	width: 100vw;
 	@media screen and (min-width: '1000px') {
 		height: 100vh;
@@ -96,6 +96,7 @@ h1 {
 h2 {
 	font-size: 24px;
 	margin-bottom: 8px;
+	line-height: 0.6;
 
 	@media screen and (min-width: '1000px') {
 		font-size: 30px;
@@ -131,7 +132,48 @@ p {
 	}
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // TRANSITIONSTRANSITIONSTRANSITIONSTRANSITIONSTRANSITIONSTRANSITIONSTRANSITIONSTRANSITIONSTRANSITIONSTRANSITIONSTRANSITIONSTRANSITIONS
+
+.page-transition-enter {
+	opacity: 0;
+}
+.page-transition-enter-active {
+opacity: 1;
+transition: opacity 300ms;
+}
+.page-transition-exit {
+opacity: 1;
+}
+.page-transition-exit-active {
+opacity: 0;
+transition: opacity 300ms;
+}
+
 .component {
 	opacity: 0;
 	transition: opacity 1s ease-in-out;
@@ -140,3 +182,67 @@ p {
 		opacity: 1;
 	}
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// LAYOUT
+.layoutWrapper {
+    display: inline-block;
+    vertical-align: top;    
+    margin-bottom: 60px;
+    margin-left: 24px;
+
+    @media screen and (min-width: '1000px') {
+        display: inline-flex;
+        align-items: flex-end;
+        width: 25vw;
+        min-width: 500px;
+        height: 100vh;
+        margin-left: 80px;
+        margin-bottom: 0;
+        position: relative;
+    }
+
+    .probjectContent {
+        @media screen and (min-width: '1000px') {
+            height: 500px;
+            display: flex;
+            flex-direction: column;
+            white-space: normal;
+            position: initial;
+            width: 100%;
+        }
+    
+        .pre {
+            line-height: 1.6;
+            color: #7b7b7b;
+            margin-top: 8px;
+            margin-bottom: 16px;
+            max-width: 220px;
+
+            @media screen and (min-width: '1000px') {
+                max-width: 160px;
+            }
+        }
+    
+        .link {
+            color: black;
+            font-size: 14px;
+            @media screen and (min-width: '1000px') {
+                font-size: 12px;
+                letter-spacing: 1px;
+            }
+        }
+    }
+}  

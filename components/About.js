@@ -2,10 +2,13 @@ import style from '../styles/about.module.scss';
 
 const About = () => {
     return (
-        <div className={`${style.aboutWrapper} background fuck`}>
-            <div className={style.aboutContent}>
+        <div
+            className="background"
+            style={{ display: 'inline-block', verticalAlign: 'top' }}
+        >
 
-                <div className={`${style.aboutIntroWrapper} component`}>
+            <div className="layoutWrapper background">
+                <div className="probjectContent component">
                     <div className={style.intro}>
                         <h2>About Me</h2>
                         <div className={style.col2}>
@@ -14,20 +17,25 @@ const About = () => {
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div className={`${style.aboutIntroWrapper} component`}>
-                    <div className={style.skillSet}>
-                        <h6>Skill Set</h6>
-                        <ul>
-                            <li>Design</li>
-                            <li>Branding</li>
-                            <li>Illustration</li>
-                            <li>Motion Graphics</li>
-                            <li>Direction</li>
-                        </ul>
-                    </div>
+            <div className="layoutWrapper">
+            <div className="probjectContent component">
+                <div className={style.skillSet}>
+                    <h6>Skill Set</h6>
+                    <ul>
+                        <li>Design</li>
+                        <li>Branding</li>
+                        <li>Illustration</li>
+                        <li>Motion Graphics</li>
+                        <li>Direction</li>
+                    </ul>
                 </div>
+            </div>
+        </div>
 
+            <div className="layoutWrapper">
+            <div className="probjectContent component">
                 <div className={`${style.experience} component`}>
                     <div className={style.work}>
                         <h2>Experience</h2>
@@ -43,6 +51,13 @@ const About = () => {
                             </ul>
                         </div>
                     </div>
+                </div>
+            </div>
+        </div>
+
+            <div className="layoutWrapper">
+            <div className="probjectContent component">
+                <div className={`${style.experience} component`}>
                     <div className={`${style.interests} component`}>
                         <div className={style.col2}>
                             <h6>Interests and preferences</h6>
@@ -66,6 +81,7 @@ const About = () => {
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     )
 }
